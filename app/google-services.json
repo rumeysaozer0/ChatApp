@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008651213740",
+    "project_id": "chatapp-8a30b",
+    "storage_bucket": "chatapp-8a30b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008651213740:android:1ab344c0ed0fa6eb877809",
+        "android_client_info": {
+          "package_name": "com.rumeysaozer.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008651213740-kc0obddd7e25m3q1hk7lqpdlvl8ujpda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4ji1TRPceaX6rnSbEXVFRUPDSmoGYtXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008651213740-kc0obddd7e25m3q1hk7lqpdlvl8ujpda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

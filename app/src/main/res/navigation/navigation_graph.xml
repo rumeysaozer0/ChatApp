@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/girisFragment">
+
+    <fragment
+        android:id="@+id/girisFragment"
+        android:name="com.rumeysaozer.chatapp.view.GirisFragment"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/action_girisFragment_to_kayitOlFragment"
+            app:destination="@id/kayitOlFragment" />
+        <action
+            android:id="@+id/action_girisFragment_to_sonMesajlarFragment"
+            app:destination="@id/sonMesajlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konusmaFragment"
+        android:name="com.rumeysaozer.chatapp.view.KonusmaFragment"
+        android:label="fragment_konusma"
+        tools:layout="@layout/fragment_konusma" />
+    <fragment
+        android:id="@+id/kayitOlFragment"
+        android:name="com.rumeysaozer.chatapp.view.kayitOlFragment"
+        android:label="fragment_kayit_ol"
+        tools:layout="@layout/fragment_kayit_ol" >
+        <action
+            android:id="@+id/action_kayitOlFragment_to_sonMesajlarFragment"
+            app:destination="@id/sonMesajlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullanicilarFragment"
+        android:name="com.rumeysaozer.chatapp.view.KullanicilarFragment"
+        android:label="fragment_kullanicilar"
+        tools:layout="@layout/fragment_kullanicilar" >
+        <action
+            android:id="@+id/action_kullanicilarFragment_to_kullaniciKonusmaFragment"
+            app:destination="@id/kullaniciKonusmaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kullaniciKonusmaFragment"
+        android:name="com.rumeysaozer.chatapp.view.KullaniciKonusmaFragment"
+        android:label="fragment_kullanici_konusma"
+        tools:layout="@layout/fragment_kullanici_konusma" >
+        <argument
+            android:name="kullaniciAdi"
+            app:argType="string" />
+        <argument
+            android:name="kullaniciId"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_kullaniciKonusmaFragment_to_sonMesajlarFragment"
+            app:destination="@id/sonMesajlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonMesajlarFragment"
+        android:name="com.rumeysaozer.chatapp.view.SonMesajlarFragment"
+        android:label="fragment_son_mesajlar"
+        tools:layout="@layout/fragment_son_mesajlar" >
+        <action
+            android:id="@+id/action_sonMesajlarFragment_to_girisFragment"
+            app:destination="@id/girisFragment" />
+        <action
+            android:id="@+id/action_sonMesajlarFragment_to_kullanicilarFragment"
+            app:destination="@id/kullanicilarFragment" />
+        <action
+            android:id="@+id/action_sonMesajlarFragment_to_konusmaFragment"
+            app:destination="@id/konusmaFragment" />
+        <action
+            android:id="@+id/action_sonMesajlarFragment_to_kullaniciKonusmaFragment"
+            app:destination="@id/kullaniciKonusmaFragment" />
+    </fragment>
+</navigation>
